@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    height: 100vh;
+} */
+
+.container-navbar {
+    background-color: pink;
+    width: 100%;
+    height: 15vh;
+}
+
+.ul-navbar {
+    
+    display: flex;
+    height: 85px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none ;
+    padding: 20px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.li-navbar:hover {
+    background-color: white;
+    border-radius: 8PX;
+}
+
+.a-navbar {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.container-content {
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.img-style {
+    width: 50%;
+    height: 50%;
+}
+
+.img-style-con {
+    width: 180px;
+    height: 180px;
+}
+
+.img-style-ser {
+    width: 180px;
+    height: 180px;
+}
+
+.container-logo {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 520px;
+    height: 280px;
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.container-footer {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.div-butt {
+    letter-spacing: 1px;
+    font-weight: 555;
+    font-size: 1.4em;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 14px;
+    width: 180px;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    box-shadow: 2px 2px 4px rgba(44, 62, 80, 0.6),
+    -2px -2px 4px rgb(236, 20, 49);
+    transition: all 500ms ease;
+}
+
+.div-butt:hover{
+    color: white;
+}
+
+.div-butt::after{
+    opacity: 0.7;
+    z-index: -1 ;
+    transition: all 300ms ease;
+    border-radius: 20px;
+    content: "";
+    top: 0;
+    left: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(250, 118, 118);
+}
+
+.div-butt:hover::after{
+    left: 0;
+}
+
